@@ -1,9 +1,9 @@
 import pandas as pd
 
-from gretel_client import get_project
+from gretel_client import create_project
 from gretel_client.config import RunnerMode
 
-project = get_project(create=True)
+project = create_project()
 
 # create a synthetic model using a default synthetic config from
 #   https://github.com/gretelai/gretel-blueprints/blob/main/config_templates/gretel/synthetics/default.yml
