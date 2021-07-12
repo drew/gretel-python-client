@@ -32,3 +32,10 @@ gretel configure
 The Gretel CLI and python SDKs require Python version 3.7 or greater. Docker is required for local training and generation jobs.
 
 For more information please refer to the [Gretel Environment Setup](https://docs.gretel.ai/environment-setup) docs.
+
+
+## Client SDKs
+
+The `gretel-client` package also ships with a set of Python Client SDKs that may be used to interact with Gretel APIs using a familiar pythonic interface. For more information on how to use these SDKs, please refer to the following links
+
+* [Projects SDK Reference](#)
