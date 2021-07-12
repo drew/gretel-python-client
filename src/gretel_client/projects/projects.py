@@ -68,7 +68,7 @@ class Project:
     @check_not_deleted
     def delete(self, include_models: bool = True):
         """Deletes a project. After the project has been deleted, functions
-        relying on a project will fail with a ``GretelProjectError` exception.
+        relying on a project will fail with a ``GretelProjectError`` exception.
 
         Note: Deleting projects is asynchronous. It may take a few seconds
         for the project to be deleted by Gretel services.

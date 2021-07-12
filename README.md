@@ -27,10 +27,8 @@ To configure the CLI, run
 gretel configure
 ```
 
-For more information please refer to our [CLI Getting Started Guide]().
-
 ## System Requirements
 
 The Gretel CLI and python SDKs require Python version 3.7 or greater. Docker is required for local training and generation jobs.
 
-For more information please refer to our [documentation]().
+For more information please refer to the [Gretel Environment Setup](https://docs.gretel.ai/environment-setup) docs.
