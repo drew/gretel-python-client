@@ -1,7 +1,7 @@
 import pandas as pd
 
 from gretel_client import create_project
-from gretel_client.config import RunnerMode
+from gretel_client.helpers import poll
 
 project = create_project()
 
@@ -13,7 +13,10 @@ model = project.create_model(model_config="synthetics/default")
 model.data_source = "https://gretel-public-website.s3.us-west-2.amazonaws.com/datasets/USAdultIncome5k.csv"
 
 # submit the model to Gretel Cloud for training
-model.create(runner_mode=RunnerMode.CLOUD, upload_data_source=True)
+model.create(upload_data_source=True)
+
+# wait for the model to training
+poll(model)
 
 # read out a preview data from the synthetic model
 pd.read_csv(model.get_artifact_link("data_preview"), compression='gzip')

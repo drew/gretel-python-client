@@ -15,7 +15,14 @@
 
 ## Getting Started
 
-The following command will install the Gretel CLI and Python SDK
+The following command will install the latest stable Gretel CLI and Python SDK
+
+
+```
+pip install gretel-client
+```
+
+To install the latest development version, you may run
 
 ```
 pip install git+https://github.com/gretelai/gretel-python-client@main
@@ -38,4 +45,5 @@ For more information please refer to the [Gretel Environment Setup](https://docs
 
 The `gretel-client` package also ships with a set of Python Client SDKs that may be used to interact with Gretel APIs using a familiar pythonic interface. For more information on how to use these SDKs, please refer to the following links
 
-* [Projects SDK Reference](#)
+* [Projects SDK Reference](https://python.docs.gretel.ai/en/latest/projects/index.html)
+
