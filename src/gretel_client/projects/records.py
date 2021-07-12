@@ -30,7 +30,7 @@ class RecordHandler(Job):
         self.record_id = record_id
         super().__init__(model.project, JOB_TYPE, self.record_id)
 
-    def create(
+    def submit(
         self,
         action: str,
         runner_mode: RunnerMode,

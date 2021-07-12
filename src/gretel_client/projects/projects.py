@@ -114,7 +114,7 @@ class Project:
         return Model(project=self, model_id=model_id)
 
     @check_not_deleted
-    def create_model(self, model_config: Union[str, Path, dict]) -> Model:
+    def create_model_obj(self, model_config: Union[str, Path, dict]) -> Model:
         return Model(model_config=model_config, project=self)
 
     @property
@@ -300,7 +300,7 @@ def tmp_project():
 
     Example::
         with tmp_project() as proj:
-            model = proj.create_model()
+            model = proj.create_model_obj()
     """
     project = get_project(create=True)
     try:

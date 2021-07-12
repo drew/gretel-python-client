@@ -119,7 +119,7 @@ class Model(Job):
         self.model_id = model_id
         super().__init__(project, JOB_TYPE, model_id)
 
-    def create(
+    def submit(
         self,
         runner_mode: RunnerMode = DEFAULT_RUNNER,
         dry_run: bool = False,
@@ -280,7 +280,7 @@ class Model(Job):
             project_id=self.project.name, model_id=self.model_id, logs="yes"
         )
 
-    def create_record_handler(self) -> RecordHandler:
+    def create_record_handler_obj(self) -> RecordHandler:
         """Creates a new record handler for the model."""
         return RecordHandler(self)
 

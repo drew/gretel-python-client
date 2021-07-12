@@ -91,7 +91,7 @@ class Job(ABC):
     # Abstract methods to implement
 
     @abstractmethod
-    def create(self) -> dict:
+    def submit(self) -> dict:
         ...
 
     @abstractproperty
